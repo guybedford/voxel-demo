@@ -1,15 +1,15 @@
 "use strict"
 
-var shell = require("gl-now")()
-var createTileMap = require("gl-tile-map")
-var createBuffer = require("gl-buffer")
-var createVAO = require("gl-vao")
-var glm = require("gl-matrix")
-var ndarray = require("ndarray")
-var fill = require("ndarray-fill")
-var ops = require("ndarray-ops")
-var createAOMesh = require("ao-mesher")
-var createAOShader = require("ao-shader")
+var shell = require("npm:gl-now")()
+var createTileMap = require("npm:gl-tile-map")
+var createBuffer = require("npm:gl-buffer")
+var createVAO = require("npm:gl-vao")
+var glm = require("npm:gl-matrix")
+var ndarray = require("npm:ndarray")
+var fill = require("npm:ndarray-fill")
+var ops = require("npm:ndarray-ops")
+var createAOMesh = require("npm:ao-mesher")
+var createAOShader = require("npm:ao-shader")
 var mat4 = glm.mat4
 
 //The shader
