@@ -40,7 +40,7 @@ shell.on("gl-init", function() {
     var x = Math.abs(i - 16)
     var y = Math.abs(j - 16)
     var z = Math.abs(k - 16)
-    return (x*x+y*y+z*z) < 30 ? 1<<15 : 0
+    return (x*x+2*y*y+z*z) < 30 ? 1<<15 : 0
   })
   
   //Compute mesh
