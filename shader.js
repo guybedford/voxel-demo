@@ -38,7 +38,7 @@ shell.on("gl-init", function() {
   
   fill(voxels, function(i,j,k) {
     var x = Math.abs(i - 16)
-    var y = Math.abs(j - 50)
+    var y = Math.abs(j - 10)
     var z = Math.abs(k - 16)
     return (x*x+y*y+z*z) < 30 ? 1<<15 : 0
   })
