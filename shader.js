@@ -9,7 +9,12 @@ var ndarray = require("npm:ndarray@1.0")
 var fill = require("npm:ndarray-fill@0.1")
 var ops = require("npm:ndarray-ops@1.1")
 var createAOMesh = require("npm:ao-mesher@0.2")
-var createAOShader = require("npm:ao-shader@0.2")
+
+var shaderVsh = require("npm:ao-shader@0.2/lib/ao.vsh!text");
+var shaderFsh = require("npm:ao-shader@0.2/lib/ao.fsh!text");
+
+var createShader = require('npm:gl-shader@0.0.6');
+
 var mat4 = glm.mat4
 
 //The shader
@@ -25,7 +30,7 @@ shell.on("gl-init", function() {
   var gl = shell.gl
 
   //Create shader
-  shader = createAOShader(gl)
+  shader = createShader(gl, shaderVsh, shaderFsh);
   
   //Create some voxels
   var voxels = ndarray(new Uint16Array(32*32*32), [32,32,32])
