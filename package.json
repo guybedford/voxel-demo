@@ -1,0 +1,16 @@
+{
+  "main": "shader",
+  "registry": "jspm",
+  "dependencies": {
+    "npm:gl-now": "0.0",
+    "npm:gl-tile-map": "0.3",
+    "npm:gl-vao": "0.0",
+    "npm:gl-matrix": "2.0",
+    "npm:ndarray": "1.0",
+    "npm:ndarray-fill": "0.1",
+    "npm:ndarray-ops": "1.1",
+    "npm:ao-mesher": "0.2",
+    "npm:ao-shader": "0.2",
+    "npm:gl-shader": "0.0.6"
+  }
+}
