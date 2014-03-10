@@ -5,6 +5,7 @@
     "npm:gl-now": "0.0",
     "npm:gl-tile-map": "0.3",
     "npm:gl-vao": "0.0",
+    "npm:gl-buffer": "0.1",
     "npm:gl-matrix": "2.0",
     "npm:ndarray": "1.0",
     "npm:ndarray-fill": "0.1",
