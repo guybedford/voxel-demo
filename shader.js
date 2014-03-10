@@ -1,3 +1,8 @@
+/*
+  Created by Mikola Lysenko
+  https://gist.github.com/mikolalysenko/5958022
+*/
+
 "use strict"
 
 var shell = require("npm:gl-now@0.0")()
