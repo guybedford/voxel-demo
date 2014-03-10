@@ -11,7 +11,8 @@
     "npm:ndarray-ops": "1.1",
     "npm:ao-mesher": "0.2",
     "npm:ao-shader": "0.2",
-    "npm:gl-shader": "0.0.6"
+    "npm:gl-shader": "0.0.6",
+    "text": "*"
   },
   "buildConfig": {
     "minify": true
