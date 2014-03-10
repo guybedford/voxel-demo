@@ -12,5 +12,8 @@
     "npm:ao-mesher": "0.2",
     "npm:ao-shader": "0.2",
     "npm:gl-shader": "0.0.6"
+  },
+  "buildConfig": {
+    "minify": true
   }
 }
