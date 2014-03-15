@@ -1,5 +1,5 @@
 {
-  "name": "3d-demo",
+  "name": "voxel-demo",
   "version": "0.0.1",
   "main": "shader",
   "registry": "npm",
