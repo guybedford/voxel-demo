@@ -1,21 +1,17 @@
 {
   "main": "shader",
-  "registry": "jspm",
+  "registry": "npm",
   "dependencies": {
-    "npm:gl-now": "0.0",
-    "npm:gl-tile-map": "0.3",
-    "npm:gl-vao": "0.0",
-    "npm:gl-buffer": "0.1",
-    "npm:gl-matrix": "2.0",
-    "npm:ndarray": "1.0",
-    "npm:ndarray-fill": "0.1",
-    "npm:ndarray-ops": "1.1",
-    "npm:ao-mesher": "0.2",
-    "npm:ao-shader": "0.2",
-    "npm:gl-shader": "0.0.6",
-    "text": "*"
-  },
-  "buildConfig": {
-    "minify": true
+    "gl-now": "0.0",
+    "gl-tile-map": "0.3",
+    "gl-vao": "0.0",
+    "gl-buffer": "0.1",
+    "gl-matrix": "2.0",
+    "ndarray": "1.0",
+    "ndarray-fill": "0.1",
+    "ndarray-ops": "1.1",
+    "ao-mesher": "0.2",
+    "ao-shader": "0.2",
+    "gl-shader": "0.0.6"
   }
 }

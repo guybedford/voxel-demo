@@ -5,20 +5,17 @@
 
 "use strict"
 
-var shell = require("npm:gl-now@0.0")()
-var createTileMap = require("npm:gl-tile-map@0.3")
-var createBuffer = require("npm:gl-buffer@0.1")
-var createVAO = require("npm:gl-vao@0.0")
-var glm = require("npm:gl-matrix@2.0")
-var ndarray = require("npm:ndarray@1.0")
-var fill = require("npm:ndarray-fill@0.1")
-var ops = require("npm:ndarray-ops@1.1")
-var createAOMesh = require("npm:ao-mesher@0.2")
+var shell = require("gl-now")()
+var createTileMap = require("gl-tile-map")
+var createBuffer = require("gl-buffer")
+var createVAO = require("gl-vao")
+var glm = require("gl-matrix")
+var ndarray = require("ndarray")
+var fill = require("ndarray-fill")
+var ops = require("ndarray-ops")
+var createAOMesh = require("ao-mesher")
 
-var shaderVsh = require("npm:ao-shader@0.2/lib/ao.vsh!text");
-var shaderFsh = require("npm:ao-shader@0.2/lib/ao.fsh!text");
-
-var createShader = require('npm:gl-shader@0.0.6');
+var createAOShader = require("ao-shader");
 
 var mat4 = glm.mat4
 
@@ -35,7 +32,7 @@ shell.on("gl-init", function() {
   var gl = shell.gl
 
   //Create shader
-  shader = createShader(gl, shaderVsh, shaderFsh);
+  shader = createAOShader(gl);
   
   //Create some voxels
   var voxels = ndarray(new Uint16Array(32*32*32), [32,32,32])
